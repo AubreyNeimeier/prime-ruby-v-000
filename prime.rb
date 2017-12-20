@@ -1,13 +1,14 @@
 
 def prime?(num)
+  if num < 0
+    return false
+  else
   divisors = (2..num-1).to_a
     divisors.none? do |divisor|
       num % divisor == 0
     end
-    if num < 0
-      return false
-    end
   end
+end
 
 
   # Add  code here!
