@@ -1,11 +1,10 @@
 
 def prime?(num)
-      divisors = (2..num-1).to_a
+  divisors = (2..num-1).to_a
     divisors.none? do |divisor|
       num % divisor == 0
     end
   end
-end
 
 
   # Add  code here!
