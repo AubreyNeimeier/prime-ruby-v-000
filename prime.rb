@@ -3,7 +3,7 @@ def prime?(num)
   if num < 0
     puts "please enter a non-negative integer"
   else
-    divisors = [2..num-1].to_a
+    divisors = (2..num-1).to_a
     divisors.none? do |divisor|
       num % divisor == 0
     end
