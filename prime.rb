@@ -4,6 +4,8 @@ def prime?(num)
     divisors.none? do |divisor|
       num % divisor == 0
     end
+    if num < 0
+      return false
   end
 
 
